@@ -1,64 +1,82 @@
-# Personal Firewall
+# 🛡️ Personal Firewall 
 
-## Overview
+A Python-based Personal Firewall Security Dashboard designed to monitor active network connections, manage firewall rules, generate security alerts, and maintain activity logs through an interactive graphical interface.
 
-Personal Firewall is a Python-based network security application designed to monitor network traffic, apply custom filtering rules, and log suspicious activities. The project demonstrates fundamental concepts of network security, packet analysis, traffic monitoring, and firewall rule management.
+---
 
-The firewall allows users to create and manage IP-based and port-based filtering rules while providing real-time visibility into network connections and security events.
+## 📌 Overview
 
-## Objectives
+The Personal Firewall Security Dashboard is a cybersecurity-focused application developed using Python. The project demonstrates fundamental firewall management and network monitoring concepts while providing a simple and user-friendly interface for managing security rules.
 
-* Monitor incoming and outgoing network traffic
-* Detect suspicious network activities
-* Block connections based on IP addresses and ports
-* Maintain detailed security logs
-* Provide a user-friendly interface for traffic monitoring
-* Demonstrate core firewall concepts and network security principles
+The application allows users to:
 
-## Features
+* Monitor active network connections in real time
+* Manage blocked IP addresses and ports
+* Generate security alerts based on configured rules
+* Record and review firewall activity logs
+* View network activity statistics through a graphical dashboard
 
-### Traffic Monitoring
+---
 
-* Real-time network connection monitoring
-* Traffic analysis and inspection
-* Active connection tracking
+## 🚀 Features
 
-### Rule Management
+### Real-Time Connection Monitoring
 
-* Block specific IP addresses
-* Block specific ports
-* Dynamic rule updates
-* Persistent rule storage
+* Displays active network connections
+* Shows local and remote endpoints
+* Displays connection status information
 
-### Logging and Alerts
+### Firewall Rule Management
 
-* Security event logging
-* Connection history tracking
-* Suspicious activity detection
-* Firewall action records
+* Add blocked IP addresses
+* Remove blocked IP addresses
+* Add blocked ports
+* Remove blocked ports
 
-### User Interface
+### Security Alerts
 
-* Firewall status dashboard
-* Traffic monitoring panel
-* Rule management interface
-* Log viewer
+* Detect blocked IP activity
+* Detect blocked port activity
+* Display alerts in real time
 
-## Project Structure
+### Logging System
+
+* Record application events
+* Store security-related alerts
+* Maintain firewall activity logs
+
+### Dashboard Statistics
+
+* Active Connections
+* Firewall Rules
+* Alert Count
+* Application Uptime
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Tkinter
+* Psutil
+* JSON
+* Git
+* GitHub
+
+---
+
+## 📂 Project Structure
 
 ```text
 Personal-Firewall/
 │
-├── README.md
-├── requirements.txt
-├── LICENSE
-│
 ├── src/
 │   ├── firewall.py
+│   ├── gui.py
+│   ├── logger.py
 │   ├── packet_monitor.py
 │   ├── rule_manager.py
-│   ├── logger.py
-│   └── gui.py
+│   └── __init__.py
 │
 ├── config/
 │   └── rules.json
@@ -66,80 +84,100 @@ Personal-Firewall/
 ├── logs/
 │   └── firewall.log
 │
-├── screenshots/
+├── tests/
+│   ├── test_logger.py
+│   ├── test_monitor.py
+│   └── test_rules.py
 │
 ├── docs/
+│   ├── Project_Report.pdf
+│   ├── User_Manual.pdf
+│   └── Architecture_Diagram.png
 │
-└── tests/
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
-## Technologies Used
+---
 
-* Python 3.x
-* Scapy
-* Psutil
-* Socket Programming
-* Tkinter
-* JSON
+## ⚙️ Installation
 
-## Installation
-
-1. Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/Shivansh-sec/Personal-Firewall.git
 ```
 
-2. Navigate to the project directory
+Navigate to the project directory:
 
 ```bash
-cd personal-firewall
+cd Personal-Firewall
 ```
 
-3. Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the application
+---
+
+## ▶️ Running the Application
+
+Start the firewall dashboard:
 
 ```bash
-python src/firewall.py
+python -m src.firewall
 ```
 
-## Testing
+---
 
-The firewall can be tested using:
+## 🔒 Security Capabilities
 
-* Localhost traffic generation
-* Port scanning simulations
-* IP blocking verification
-* Port blocking verification
-* Connection monitoring tests
+The current implementation includes:
 
-## Learning Outcomes
+* Real-time connection monitoring
+* Firewall rule management
+* Blocked IP detection
+* Blocked port detection
+* Event logging
+* Dashboard-based monitoring
 
-* Network Security Fundamentals
-* Packet Analysis
-* Firewall Design Principles
-* Traffic Monitoring
-* Security Logging
-* Rule-Based Access Control
-* Python Security Tool Development
+---
 
-## Future Enhancements
+## 📚 Documentation
 
-* Machine Learning-Based Threat Detection
-* Threat Intelligence Integration
-* Advanced Packet Inspection
-* Web-Based Dashboard
-* Multi-Platform Support
+Additional documentation is available in the `docs/` directory:
 
-## Author
+* Project Report
+* User Manual
+* Architecture Diagram
 
-Cybersecurity Internship Project
+---
 
-## Disclaimer
+## 📈 Future Improvements
 
-This project is developed for educational and cybersecurity learning purposes only.
+Potential enhancements include:
+
+* Enhanced traffic analysis
+* Improved alert classification
+* Advanced reporting features
+* Additional monitoring capabilities
+* Extended logging functionality
+
+---
+
+## 👨‍💻 Author
+
+**Shivansh**
+
+B.Tech Computer Science Engineering Student
+Cyber Security Enthusiast
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
